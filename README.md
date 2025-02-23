@@ -114,3 +114,61 @@ Reference:
 - Object-oriented design for reusability
 
 This implementation serves as an educational tool for understanding neural networks at a fundamental level, avoiding the abstraction of existing frameworks.
+
+- NumPy implementation
+- Efficient dot product operations
+- Vectorized layer calculations
+
+### 4. Object-Oriented Implementation (p4.py)
+Reference:
+
+Key features:
+- Dense layer class
+- Weight initialization: `0.10 * np.random.randn()`
+- Bias initialization with zeros
+- Forward propagation using dot product
+
+### 5. Activation Functions (p6-2.py)
+Reference:
+
+- ReLU Activation: `max(0, x)`
+- Softmax Activation for classification
+- Proper numerical stability handling
+
+### 6. Complete Network Architecture
+Reference:
+
+- Two-layer neural network
+- ReLU activation in hidden layer
+- Softmax activation in output layer
+- Forward propagation pipeline
+
+## Core Components
+
+### Layer_Dense Class
+Properties:
+- Weights: Randomly initialized with scaling
+- Biases: Zero initialization
+- Forward method: Implements `output = inputs @ weights + biases`
+
+### Activation Functions
+1. ReLU (Rectified Linear Unit):
+   - Forward method: `max(0, x)`
+   - Used in hidden layers
+
+2. Softmax:
+   - Exponential normalization
+   - Numerical stability with max subtraction
+   - Probability distribution output
+
+## Data Handling
+- Uses spiral dataset for testing
+- Supports batch processing
+- Implements data generation utilities
+
+## Dependencies
+- NumPy: Matrix operations and efficient computations
+- NNFS: Dataset generation and utilities
+- Matplotlib: Visualization tools
+
+## Usage Example
