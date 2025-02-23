@@ -66,3 +66,51 @@ This codebase demonstrates the progressive development of a neural network, star
 5. Structured neural network architecture
 
 The implementation focuses on educational purposes, showing each step in building a neural network from fundamental principles rather than using existing frameworks. 
+
+### 2. Multiple Neurons Layer
+- Expands to 4 inputs and 3 neurons
+- Each neuron has its own weights and bias
+- Manual matrix multiplication implementation
+
+### 3. Vectorized Implementation
+Reference: 
+
+### 4. Dense Layer Class
+Reference:
+
+Key features:
+- Weight initialization using normalized random values (0.10 * randn)
+- Zero initialization for biases
+- Forward propagation using dot product
+
+### 5. ReLU Activation
+Reference:
+
+- Implements Rectified Linear Unit
+- Used after dense layer for non-linearity
+
+### 6. Softmax Implementation
+Reference:
+
+- Exponential normalization
+- Probability distribution output
+
+## Data Handling
+- Uses spiral dataset for testing
+- Supports batch processing
+- Implements data generation utilities
+
+## Dependencies
+- NumPy: Matrix operations
+- NNFS: Dataset generation
+- Matplotlib: Visualization
+
+## Usage Example
+
+## Project Structure
+- Progressive implementation from basic to advanced concepts
+- Each file builds upon previous concepts
+- Clear separation of layer and activation functions
+- Object-oriented design for reusability
+
+This implementation serves as an educational tool for understanding neural networks at a fundamental level, avoiding the abstraction of existing frameworks.
